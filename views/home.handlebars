@@ -1,0 +1,12 @@
+<main>
+    <h1>{{ title }}</h1>
+    <ul>
+        {{#each produtos}}
+        <li>
+            <h2>{{{ nome }}}</h2>
+            <a href="/produto/{{ id }}"><p>{{{ descricao }}}</p></a>
+            <p>Preço: R$ {{{ preco }}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</main>
